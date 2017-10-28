@@ -6,4 +6,5 @@ stage "stage2"
 print "hello
 stage "stage3"
 print "world"
-
+stage "stage4"
+print "world2"
