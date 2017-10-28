@@ -8,3 +8,6 @@ stage "deploy"
 print "world"
 stage "stage4"
 print "world2"
+stage "stage5"
+print "welcome"
+
