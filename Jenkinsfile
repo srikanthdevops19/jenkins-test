@@ -1,11 +1,11 @@
+stage "download"
+checkout scm
+
 stage "clean"
-print "hello world"
-stage "build"
-print "hi"
+sh "mvn clean"
+
 stage "test"
-print "hello"
-stage "deploy"
-print "world"
-stage "stage4"
-print "world2"
-print "hello world"
+sh "mvn test"
+
+stage 'pacakge'
+sh "mvn package"
