@@ -1,4 +1,6 @@
-stage "download"
+node 
+{
+  stage "download"
 checkout scm
 
 stage "clean"
@@ -9,3 +11,4 @@ sh "mvn test"
 
 stage 'pacakge'
 sh "mvn package"
+}
