@@ -4,11 +4,11 @@ node
 checkout scm
 
 stage "clean"
-sh "mvn clean"
+sh "cd my-app; mvn clean"
 
 stage "test"
-sh "mvn test"
+sh "cd my-app;mvn test"
 
 stage 'pacakge'
-sh "mvn package"
+sh "cd my-app;mvn package"
 }
