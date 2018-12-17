@@ -7,5 +7,5 @@ awk '{print $2}')cho $usrspcﬁ [
 $usrspc -ge 30 ];thenecho 
 
 "Alert Disk space more: $usrspc $partition"fidone
-
+ error alert not found
 
