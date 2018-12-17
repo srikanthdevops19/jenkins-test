@@ -1,0 +1,11 @@
+[200~df -H | grep -vE 'Filesystem|tmpfs|shm' | awk '{print $5 " "$1}' |
+ while read outputど
+cho $outputすrspc=$(echo $output 
+| awk '{print $1}' | cut -d'%' -f1 )
+ぱrtition=$(echo $output | 
+awk '{print $2}')cho $usrspcﬁ [ 
+$usrspc -ge 30 ];thenecho 
+
+"Alert Disk space more: $usrspc $partition"fidone
+
+

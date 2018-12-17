@@ -1,7 +1,11 @@
+node 
+{
+  stage "download"
+checkout scm
+
 stage "clean"
-print "hello world"
-stage "build"
-print "hi"
+sh "cd my-app; mvn clean"
+
 stage "test"
 print "hello"
 stage "deploy"
@@ -10,4 +14,9 @@ stage "stage4"
 print "world2"
 stage "stage5"
 print "welcome"
+sh "cd my-app;mvn test"
+
+stage 'pacakge'
+sh "cd my-app;mvn package"
+}
 
